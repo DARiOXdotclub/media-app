@@ -1,0 +1,15 @@
+{
+  "name": "media-app",
+  "version": "1.0.0",
+  "description": "DARiOX Media App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/darioxdotclub/media-app",
+  "author": "jylescoad-ward",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "electron": "^5.0.4"
+  }
+}
