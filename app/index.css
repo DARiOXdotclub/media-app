@@ -1,0 +1,113 @@
+body{
+	background-color:rgba(0,0,0,0);
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+#minimg, #maximg, #closeimg{
+	position:relative;
+	top:-2.5px;
+	left:-2.5px;
+}
+#minimg{
+	position:relative;
+	right:2px;
+	top:-3px;
+}
+#maximg{
+	position:relative;
+}
+.closebtn a:hover{
+	border:1px white solid;
+}
+#titlebar{
+	height:30px;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#212121;
+	border-bottom:2px white solid;
+	-webkit-app-region: drag;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+}
+#iframe{
+	width:100%;
+	position:absolute;
+	top:31px;
+	left:0;
+	height:calc(100% - 31px);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#titlebar-icon{
+	position:absolute;
+	top:2.5px;
+	left:2.5px;
+}
+#closebtn{
+	position:absolute;
+	top:5px;
+	right:5px;
+	height:20px;
+	width:20px;
+	background-color:#ff3b3b;
+	border-radius: 20px;
+}
+#minbtn{
+	position:absolute;
+	top:5px;
+	right:55px;
+	height:20px;
+	width:20px;
+	background-color:#ff8d3b;
+	border-radius: 20px;
+}
+#maxbtn{
+	position:absolute;
+	top:5px;
+	right:30px;
+	height:20px;
+	width:20px;
+	background-color:#3fde23;
+	border-radius: 20px;
+}
+#iframelocation{
+	background-color: white;
+	height:25px;
+	position:absolute;
+	top:2px;
+	left:calc(25% - 2.5px);
+	width:50%;
+	border:1px solid darkgrey;
+}
+#iframelocation img{
+	position: relative;
+	bottom:3px;
+}
+#iframelocationtext{
+	position:relative;
+	bottom:12px;
+	font-family: 'Segoe UI', sans-serif;
+}
+#backbtn{
+	position:absolute;
+	top:4.5px;
+	left:100px;
+	border: white 1px solid;
+	height:20px;
+	width:80px;
+}
+#backbtn span img{
+	position:relative;
+	padding-left:3px;
+	margin-right:5px;
+	top:7px;
+}
+#backbtn span{
+	color:white;
+	font-family: 'Seoge UI', sans-serif;
+	font-weight: bold;
+	position: relative;
+	bottom:10px;
+}

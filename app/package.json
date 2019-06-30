@@ -1,0 +1,20 @@
+{
+  "name": "DARiOXMedia",
+  "version": "1.2.4",
+  "description": "DARiOX Media App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "buildwinapp": "electron-packager ./ \"DARiOX Media\" --out=../dist/win --platform=win32 --arch=x64 --app-version= . $npm_package_version . --icon=./image/circlogo.ico --overwrite",
+    "buildmacapp": "electron-packager ./ \"DARiOX Media\" --out=../dist/osx --platform=darwin --arch=x64 --icon=./image/circlogo.icns --osx-sign.identity=\"DARiOX\" --overwrite"
+  },
+  "repository": "https://github.com/darioxdotclub/media-app",
+  "author": "jylescoad-ward",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "electron": "^5.0.6"
+  },
+  "dependencies": {
+    "update-electron-app": "^1.4.2"
+  }
+}

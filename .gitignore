@@ -1,4 +1,6 @@
-app/node_modules
-installer/node_modules
+app/node_modules/
+dist/
+node_modules/
+installer/node_modules/
 installer/
 .idea/
