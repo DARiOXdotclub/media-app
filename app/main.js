@@ -11,22 +11,24 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1400,
     height: 900,
+    titleBarStyle: 'hidden',
     frame: false,
     transparent: true,
-    titleBarStyle: 'hidden',
     webPreferences: {
       webSecurity: false,
-      "chromeWebSecurity": false,
+      chromeWebSecurity: false,
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),
-    },
-    "node-integration": "iframe"
+    }
   })
+
+  mainWindow.webContents.setUserAgent(mainWindow.webContents.getUserAgent() + " DARiOXMedia " & process.platform);
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -35,6 +37,7 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
 }
 
 // This method will be called when Electron has finished

@@ -1,60 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Test</title>
+		<title>DARiOX Media</title>
+		  <meta http-equiv="Content-Security-Policy" content="default-src * atom://*; img-src blob: data: * atom://*; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src blob: data: mediastream: * atom://*;">
 		<link href="index.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
-		<div id="titlebar">
-			<img src="imageasset/circlogo.png" id="titlebar-icon" height="25px" width="25px">
-			<!--div id="buttons">
-				<div id="closebtn">
-					<img src="imageasset/appbar.close.svg" height="25px" width="25px" id="closeimg">
-				</div>
-				<div id="maxbtn">
-					<img src="imageasset/appbar.add.svg" height="25px" width="25px" id="maximg">
-				</div>
-				<div id="minbtn">
-					<img src="imageasset/appbar.minus.svg" height="25px" width="25px" id="minimg">
-				</div>
-			</div>
-			<div id="backbtn">
-				<span onclick="iframe.history.back()"><img src="imageasset/appbar.arrow.left.png" height="25px" width="25px">Back</span>
-			</div>
-			<div id="iframelocation">
-				<img height="30px" width="30px" src="imageasset/appbar.link.svg">
-				<span id="iframelocationtext">Loading DARiOX Media</span>
-			</div-->
-		</div>
-		<div class="loading" style="height:calc(100% - 30px);width:100%;position:absolute;top:30px;left:0;background-image:url('./loadingbg.png');background-repeat: repeat;border-bottom-left-radius: 15px;border-bottom-right-radius:15px;">
-			<center><br><br>
-				<h1 style="color:white;font-family:sans-serif;">Loading DARiOX Media</h1>
-			</center>
-		</div>
-		<iframe src="http://media.dariox.club" id="iframe" name="iframe" height="calc(100% - 31px)" width="100%" disablewebsecurity frameborder="0">
-	</body>
+	<body id="body" tabindex="-1">.</body>
+		<script src="renderer.js"></script>
 </html>
-<script src="./menuhandle.js">
-const {remote} = require('electron');
-
-document.getElementById('close').addEventListener('click', closeWindow);
-document.getElementById('minimize').addEventListener('click', minimizeWindow);
-document.getElementById('maximize').addEventListener('click', maximizeWindow);
-
-
-
-function closeWindow () {        
-    var window = remote.getCurrentWindow();
-    window.close();
-}
-
-function minimizeWindow () {   
-    var window = remote.getCurrentWindow();
-    window.minmize();
-}
-
-function maximizeWindow () {
-    var window = remote.getCurrentWindow()
-    window.isMaximized() ? window.unmaximize() : window.maximize();
-}
-</script>

@@ -3,6 +3,24 @@ body{
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
+span#version{
+	color:white;
+	font-weight: bold;
+	position:absolute;
+	font-family:'Arial', sans-serif;
+	top:1px;
+	left:50px;
+	font-size:12px;
+}
+span#platform{
+	color:white;
+	font-weight: bold;
+	position:absolute;
+	font-family:'Arial', sans-serif;
+	top:15px;
+	left:50px;
+	font-size:12px;
+}
 #minimg, #maximg, #closeimg{
 	position:relative;
 	top:-2.5px;
@@ -16,12 +34,9 @@ body{
 #maximg{
 	position:relative;
 }
-.closebtn a:hover{
-	border:1px white solid;
-}
 #titlebar{
 	height:30px;
-	width:100%;
+	width: calc(100% - 60px);
 	position:absolute;
 	top:0;
 	left:0;
@@ -29,7 +44,6 @@ body{
 	border-bottom:2px white solid;
 	-webkit-app-region: drag;
 	border-top-left-radius:15px;
-	border-top-right-radius:15px;
 }
 #iframe{
 	width:100%;
@@ -42,35 +56,55 @@ body{
 }
 #titlebar-icon{
 	position:absolute;
-	top:2.5px;
-	left:2.5px;
+	top:0;
+	left:0;
 }
-#closebtn{
+.closebtn{
 	position:absolute;
-	top:5px;
-	right:5px;
-	height:20px;
-	width:20px;
+	right:0;
+	height:29px;
+	width:30px;
 	background-color:#ff3b3b;
-	border-radius: 20px;
+	border-top:1px solid #5f646b;
+	border-left:1px solid #5f646b;
+	cursor: url;
 }
-#minbtn{
+.maxbtn{
 	position:absolute;
-	top:5px;
-	right:55px;
-	height:20px;
-	width:20px;
-	background-color:#ff8d3b;
-	border-radius: 20px;
-}
-#maxbtn{
-	position:absolute;
-	top:5px;
 	right:30px;
-	height:20px;
-	width:20px;
+	height:29px;
+	width:30px;
 	background-color:#3fde23;
-	border-radius: 20px;
+	border-top:1px solid #5f646b;
+	border-left:1px solid #5f646b;
+}
+.minbtn{
+	position:absolute;
+	right:32px;
+	height:29px;
+	width:30px;
+	background-color:#ff8d3b;
+	border-top:1px solid #5f646b;
+	border-left:1px solid #5f646b;
+	cursor: url;
+}
+.minbtn:hover{
+	background-color:#6b6b6b;
+	cursor: url;
+	border-top:2px solid white;
+	border-left:2px solid white;
+} 
+.maxbtn:hover{
+	background-color:#6b6b6b;
+	cursor: url;
+	border-top:2px solid white;
+	border-left:2px solid white;
+}
+.closebtn:hover{
+	cursor: url;
+	background-color:#ff5252;
+	border-top:2px solid darkred;
+	border-left:2px solid darkred;
 }
 #iframelocation{
 	background-color: white;
@@ -90,24 +124,11 @@ body{
 	bottom:12px;
 	font-family: 'Segoe UI', sans-serif;
 }
-#backbtn{
+.backbtn{
 	position:absolute;
 	top:4.5px;
 	left:100px;
 	border: white 1px solid;
 	height:20px;
 	width:80px;
-}
-#backbtn span img{
-	position:relative;
-	padding-left:3px;
-	margin-right:5px;
-	top:7px;
-}
-#backbtn span{
-	color:white;
-	font-family: 'Seoge UI', sans-serif;
-	font-weight: bold;
-	position: relative;
-	bottom:10px;
 }

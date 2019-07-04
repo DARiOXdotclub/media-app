@@ -1,1 +1,1 @@
-electron-packager ./app "DARiOX.Media" --out=dist/win --platform=win32 --arch=x64 --app-version=1.3 --icon=./image/circlogo.ico --overwrite
+electron-packager ./app "DARiOX.Media" --out=dist/win --platform=win32 --arch=x64 --app-version=1.3.1 --icon=./image/circlogo.ico --overwrite
