@@ -12,7 +12,7 @@
   "author": "jylescoad-ward",
   "license": "Apache License 2.0",
   "devDependencies": {
-    "electron": "^5.0.6"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "update-electron-app": "^1.4.2"
